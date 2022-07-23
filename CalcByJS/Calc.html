@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>My_Calc</title>
+    <style>
+        body{
+            position: relative;
+        }
+        #mycalc{
+            width: 450px;
+            height: 400px;
+            margin-left: 35%;
+            margin-top: 10%;
+            border: 3px solid rgb(0, 0, 36);
+            background-color: rgb(75, 74, 74);
+            box-shadow: 15px 25px rgb(41, 41, 41);
+            border-radius: 30px;
+        }
+        #mycalc div:last-child{
+            width: 100%;
+            height: 80%;
+            margin-left: 15px;
+            /*margin-top: 20%;*/
+            margin-bottom: 0px;
+            margin-top: 40px;
+        }
+        #mycalc div:first-child{
+            width: 100%;
+            height: 20%;
+            
+        }
+        #mycalc div button{
+            width: 50px;
+            height: 50px;
+            color: black;
+            font-size: 30px;
+            text-align: center;
+            margin: 7px;
+            background-color: rgb(255, 255, 255);
+            font-weight: bold;
+            border-radius: 15px;
+            box-shadow: 7px 5px rgb(2, 2, 2);
+
+        }
+        .sp{
+            width: 70% !important;
+            height: 110px !important;
+            margin-bottom: -5px !important;
+            padding-bottom: 0px;
+        }
+        #eq:hover{
+            background-color: rgb(255, 157, 0) !important;
+        }
+        #eq{
+            background-color: rgb(228, 146, 5) !important;
+            color: white !important;
+            font-size: 45px !important;
+        }
+        #off:hover{
+            background-color: red !important;
+        }
+        #mycalc div button:hover{
+            background-color: rgb(125, 125, 126);
+        }
+        input{
+            margin: 25px;
+            width: 85%;
+            height: 80%;
+            border-radius: 30px;
+            font-size: 40px;
+            box-shadow: -10px -8px rgb(41, 41, 41);
+            background-color: rgb(195, 221, 248);
+        }
+        #allnum{
+            display: grid;
+            grid-template-columns: 65% 35%;
+            grid-template-rows: auto;
+        }
+        #allnum div:last-child{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            margin-left: -5px;
+            margin-top: 0px;
+        }
+      
+        
+    
+       
+        
+    </style>
+</head>
+<body>
+    <div id="mycalc" >
+        <div>
+            <input type="text" id="mynum" value="0"> 
+        </div>
+        <div id="allnum">
+            <div>
+                <button id="one" class="num">1</button>
+                <button id="two" class="num">2</button>
+                <button id="three" class="num">3</button>
+                <button id="div" class="num">/</button>
+                <button id="four" class="num">4</button>
+                <button id="five" class="num">5</button>
+                <button id="six" class="num">6</button>
+                <button id="mul" class="num">*</button>
+                <button id="seven" class="num">7</button>
+                <button id="eight" class="num">8</button>
+                <button id="nine" class="num">9</button>
+                <button id="sum" class="num">+</button>                
+                <button id="per"class="num">%</button>
+                <button id="dot" class="num">.</button>
+                <button id="zero" class="num">0</button>
+                <button id="sub" class="num">-</button>
+               
+            </div>
+            <div>
+                <button id="off" class="num sp">off</button>
+                <button id="del"class="num sp">del</button>
+                <button id="eq"class="num sp">=</button>
+                <button id="C" class="num sp">C</button>
+            </div>
+        </div>
+        
+        
+    </div>
+    <div>
+
+    </div>
+    <script src="Calc.js"></script>
+</body>
+</html>
